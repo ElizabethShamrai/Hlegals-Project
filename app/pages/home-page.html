@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hlegals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./../styles/home-page.min.css">
+    <link rel="stylesheet" href="./../fonts/stylesheet.css">
+    <link rel="icon" href="./../images/icons/link-img.svg">
+</head>
+
+<body>
+    <header class="header position-absolute">
+        <div class="container-xxl container-xl container-lg container-md-fluid px-4">
+            <div class="row">
+                <div class="header__top">
+                    <div class="header__top-wrapper d-flex align-items-center justify-content-md-end justify-content-between col-12">
+                        <div class="header__lang-switcher">
+                            <label>
+                                 <input name="lang" type="radio" checked>
+                                 <span class="fw-bold">УК</span>
+                             </label>
+                            <label>
+                                 <input name="lang" type="radio">
+                                 <span class="fw-bold">РУ</span>
+                             </label>
+                            <label>
+                                 <input name="lang" type="radio">
+                                 <span class="fw-bold">EN</span>
+                             </label>
+                        </div>
+                        <div class="header__address">
+                            <a target="_blank" href="https://www.google.com.ua/maps/place/%D0%90%D0%B4%D0%BC%D1%96%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4360487,30.7379414,17z/data=!3m1!4b1!4m5!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301">
+                              Одеса, Адміральський пр., 3
+                              </a>
+                        </div>
+                        <div class="header__contact">
+                            <a class="fw-bold" href="tel:+380503901591">+38 (050) 390 15 91</a>
+                        </div>
+                        <div class="header__socials">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <img src="./../images/icons/facebook.svg" alt="Facebook">
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg p-0">
+                        <a class="navbar-brand" href="./home-page.html">
+                            <img src="./../images/logo.svg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContents" aria-controls="navbarSupportedContents" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon header__icon-hamburger"></span>
+                        </button>
+                        <div class="wrapper navbar-collapse collapse header__bg-item d-flex justify-content-end">
+                            <div class="navbar-collapse collapse flex-lg-column align-items-end" id="navbarSupportedContents">
+                                <ul class="navbar-nav d-flex align-items-center">
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link" aria-current="page" href="./about-us.html">про нас</a>
+                                    </li>
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link" href="./services.html">послуги</a>
+                                    </li>
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link" href="./team.html">команда</a>
+                                    </li>
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link" href="./publications.html">публікації</a>
+                                    </li>
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link" href="./contact.html">контакти</a>
+                                    </li>
+                                    <li class="nav-item header__bg-link">
+                                        <a class="header__link " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">допомога</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner overflow-hidden">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 banner__img-wrapper position-relative h-100">
+                        <div class="img-p-bg">
+                        </div>
+                        <div class="img-p-letter position-absolute">
+                        </div>
+                        <div class="banner__text position-absolute">
+                            <h1 class="m-auto text-center">системний адміністратор правових рішень</h1>
+                        </div>
+                        <div class="banner__scroll-down position-absolute">
+                            <a href="#scroll"><img class="banner__scroll-jump slide_product" src="./../images/icons/scroll_down.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience" id="scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="experience__tag">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Послідовні</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Клієнтоорієнтовані</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Інноваційні</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Бізнес-орієнтовані
+                            юристи</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <h3>Перевертаємо уявлення про юридичні послуги</h3>
+                                <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <h3>МОТИВОВАНІ СПІВРОБІТНИКИ</h3>
+                                <p>Cпівробітники працюють не через страх втратити роботу і отримати штраф, а тому що їм це подобається, і вони готові витрачати більше сил. Клієнти відчувають різницю, коли до них звертається добродушно налаштована людина
+                                    і той, кого примушують працювати з-під палки.</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <h3>Інноваційні діяльність</h3>
+                                <p>Суб’єктами інноваційної діяльності можуть бути фізичні і (або) юридичні особи України, фізичні і (або) юридичні особи іноземних держав, особи без громадянства, об’єднання цих осіб, які провадять в Україні інноваційну діяльність
+                                    і (або) залучають майнові та інтелектуальні цінності</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <h3>Бізнес-орієнтовані юристи</h3>
+                                <p>Клієнти на тлі скорочення витрат узяли рутинну роботу на себе, а до консультантів звертаються переважно зі складними спорами.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators m-0">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="slide-title fw-bold p-0 m-0 color-gradient">Послідовні</p>
+                                <h2>Перевертаємо уявлення про юридичні послуги</h2>
+                                <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="slide-title fw-bold p-0 m-0 color-gradient">Клієнтоорієнтовані</p>
+                                <h2>МОТИВОВАНІ СПІВРОБІТНИКИ</h2>
+                                <p>Мотивовані співробітники працюють не через страх втратити роботу і отримати штраф, а тому що їм це подобається, і вони готові витрачати більше сил. Клієнти відчувають різницю, коли до них звертається добродушно налаштована
+                                    людина і той, кого примушують працювати з-під палки.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="slide-title fw-bold p-0 m-0 color-gradient">Інноваційні</p>
+                                <h2>Інноваційні діяльність</h2>
+                                <p>Суб’єктами інноваційної діяльності можуть бути фізичні і (або) юридичні особи України, фізичні і (або) юридичні особи іноземних держав, особи без громадянства, об’єднання цих осіб, які провадять в Україні інноваційну діяльність
+                                    і (або) залучають майнові та інтелектуальні цінності, вкладають власні чи запозичені кошти в реалізацію в Україні інноваційних проектів.</p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="slide-title fw-bold p-0 m-0 color-gradient">Бізнес-орієнтовані юристи
+                                </p>
+                                <h2>Бізнес-орієнтовані юристи
+                                </h2>
+                                <p>Зі статиста в партнери — так можна стисло описати тенденцію останніх років, яку помітили дослідники юридичної професії. Клієнти на тлі скорочення витрат узяли рутинну роботу на себе, а до консультантів звертаються переважно
+                                    зі складними спорами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services services__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="services__title">
+                        <a href="./services.html">Послуги</a>
+                        <img src="./../images/icons/arrow.svg" alt="">
+                        <h2>Що ми вміємо робити краще за інших?</h2>
+                    </div>
+                    <div class="services__blocks d-flex flex-wrap">
+                        <div class="services__block d-md-inline-block d-flex flex-wrap pad-bottom col-md-4 col-xs-12">
+                            <img src="./../images/icons/Icon1.svg" alt="">
+                            <a class="text-decoration-none" href="./service-unit.html">
+                                <h3>
+                                    IT та електронна комерція
+                                </h3>
+                            </a>
+                            <p>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
+                        </div>
+                        <div class="services__block d-md-inline-block d-flex flex-wrap pad-bottom col-md-4 col-xs-12"> <img src="./../images/icons/Icon2.svg" alt="">
+                            <a class="text-decoration-none" href="#">
+                                <h3>
+                                    Комплексний щоденний юридичний супровід
+                                </h3>
+                            </a>
+                            <p>До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
+                        </div>
+                        <div class="services__block d-md-inline-block d-flex flex-wrap pad-bottom col-md-4 col-xs-12">
+                            <img src="./../images/icons/Icon3.svg" alt="">
+                            <a class="text-decoration-none" href="#">
+                                <h3>
+                                    Структуризація корпоративних відносин
+                                </h3>
+                            </a>
+                            <p>Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії. </p>
+                        </div>
+                        <div class="services__block d-md-inline-block d-flex flex-wrap col-md-4 col-xs-12">
+                            <img src="./../images/icons/Icon4.svg" alt="">
+                            <a class="text-decoration-none" href="#">
+                                <h3>
+                                    IT та електронна комерція
+                                </h3>
+                            </a>
+                            <p>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста. </p>
+                        </div>
+                        <div class="services__block d-md-inline-block d-flex flex-wrap col-md-4 col-xs-12">
+                            <img src="./../images/icons/Icon5.svg" alt="">
+                            <a class="text-decoration-none" href="#">
+                                <h3>
+                                    Захист бізнесу, інтелектуальної власності
+                                </h3>
+                            </a>
+                            <p>А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.</p>
+                        </div>
+                        <div class="services__block d-md-inline-block d-flex flex-wrap col-md-4 col-xs-12">
+                            <img src="./../images/icons/Icon6.svg" alt="">
+                            <a class="text-decoration-none" href="#">
+                                <h3>
+                                    Судове представництво
+                                </h3>
+                            </a>
+                            <p>Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія? Маєте власний юридичний відділ, чи ні?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleCaption" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="team__place">
+                                    <img src="./../images/icons/photo1.svg" class="d-block team__photo" alt="#">
+                                    <div class="team__info">
+                                        <a class="fw-bold text-uppercase text-decoration-none" href="./team.html">Команда</a>
+                                        <img class="team__arrow" src="./../images/icons/arrowb.svg" alt="#">
+                                        <h2 class="fw-bold">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                        <p class="m-0">Олександр Олександровський</p>
+                                        <p class="m-0">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="team__place">
+                                    <img src="./../images/icons/photo2.svg" class="d-block team__photo" alt="#">
+                                    <div class="team__info">
+                                        <span class="fw-bold">Команда</span>
+                                        <img class="team__arrow" src="./../images/icons/arrowb.svg" alt="#">
+                                        <h2 class="fw-bold">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                        <p class="m-0">Олександр Олександровський</p>
+                                        <p class="m-0">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="team__place">
+                                    <img src="./../images/icons/photo3.svg" class="d-block team__photo" alt="#">
+                                    <div class="team__info">
+                                        <span class="fw-bold">Команда</span>
+                                        <img class="team__arrow" src="./../images/icons/arrowb.svg" alt="#">
+                                        <h2 class="fw-bold">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                        <p class="m-0">Олександр Олександровський</p>
+                                        <p class="m-0">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="case">
+            <div class="container">
+                <div class="row">
+                    <div class="case__item w-case p-0">
+                        <div class="case__one">
+                            <span class="fw-bold">Успішні кейси</span>
+                        </div>
+                        <div class="case__fourth">
+                            <p class="">Супровід проекту з купівлі-продажу сільськогосподарської продукції
+                            </p>
+                            <span>tapgerine</span>
+                        </div>
+                    </div>
+                    <div class="case__second w-case">
+                        <p>Підготовка комплексного юридичного висновку для європейського банку
+                        </p>
+                        <span>WannaBiz</span>
+                    </div>
+                    <div class="case__third w-case">
+                        <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції
+                        </p>
+                        <span>tapgerine</span>
+                    </div>
+                    <div class="case__fifth w-case">
+                        <div class="text">
+                            <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції
+                            </p>
+                            <span>tapgerine</span></div>
+
+                    </div>
+                    <div class="case__sixth w-case">
+                        <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції
+                        </p>
+                        <span>tapgerine</span>
+                    </div>
+                    <div class="case__seventh w-case">
+                        <p>Супровід проекту з купівлі-продажу сільськогосподарської продукції
+                        </p>
+                        <span>tapgerine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients">
+            <div class="row w-100 m-0">
+                <h3 class="m-0 fw-bold text-uppercase text-center">Вже довіряють нам</h3>
+                <div class="clients__wrapper d-flex flex-wrap p-0">
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="clients__item hillel">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients1.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item orangear">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients5.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item infratek">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients9.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="clients__item wannabiz">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients2.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item orangear adtelligent">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients6.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item adtelligent citypark">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients10.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="clients__item tapgerine">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients3.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item clickky">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients7.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item infratek artprint">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients11.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="clients__item look">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients4.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item leasing">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients8.svg" alt=""></a>
+                        </div>
+                        <div class="clients__item ultimate">
+                            <a class="d-flex align-items-center justify-content-center" href=""><img src="./../images/clients/clients12.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="publication position-relative overflow-hidden">
+            <div class="container">
+                <div class="row position-relative">
+                    <div class="publication__title">
+                        <a class="text-decoration-none text-uppercase fw-bold" href="#">Публікації
+                            <img class="publication__arrow" src="./../images/icons/arrowb.svg" alt="#">
+                        </a>
+                        <h2 class="m-0 fw-bold text-uppercase">Нам є що розповісти</h2>
+                    </div>
+                    <div class="publication__wrapper d-flex flex-wrap justify-content-center position-relative p-0">
+                        <div class="col-md-4 col-sm-6 col-12 publication__items">
+                            <div class="publication__top">
+                                <div class="publication__text">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Валютний контроль помер, хай живе валютний контроль!</a>
+                                    <span class="fw-bold">
+                                        14 червня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0 ">
+                                        Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="publication__bot">
+                                <img src="./../images/publications/publication1.svg" alt="#">
+                                <div class="publication__text">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Заповіт міленіала</a>
+                                    <span class="fw-bold">
+                                        19 серпня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0">
+                                        Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в повсякденне життя вашої компанії.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 publication__items">
+                            <div class="publication__top">
+                                <img src="./../images/publications/publication2.svg" alt="#">
+                                <div class="publication__text publication__adeptive-none">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Equity associate</a>
+                                    <span class="fw-bold">
+                                        22 квітня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0">
+                                        На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду… </p>
+                                </div>
+                            </div>
+                            <div class="publication__bot publication__adeptive-none">
+                                <img src="./../images/publications/publication4.svg" alt="#">
+                                <div class="publication__text">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Валютний контроль помер, хай живе валютний контроль!</a>
+                                    <span class="fw-bold">
+                                         14 червня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0">
+                                        Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 publication__items publication__adeptive-none">
+                            <div class="publication__top">
+                                <img src="./../images/publications/publication3.svg" alt="#">
+                                <div class="publication__text">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR</a>
+                                    <span class="fw-bold">
+                                        29 вересня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0">
+                                        І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних. </p>
+                                </div>
+                            </div>
+                            <div class="publication__bot">
+                                <img src="./../images/publications/publication5.svg" alt="#">
+                                <div class="publication__text">
+                                    <a class="text-decoration-none" href="./publication-unit.html">Валютний контроль помер, хай живе валютний контроль!</a>
+                                    <span class="fw-bold">
+                                        14 червня
+                                    </span>
+                                    <div class="publication__border"></div>
+                                    <p class="m-0">
+                                        Експерти проводять конференції, круглі столи та іншого штибу заходи на тему «лібералізація валютного законодавства». Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="publication__link d-flex justify-content-center align-items-center position-absolute fw-bold" href="./publications.html">
+                        <p class="m-0 text-white">Ще публікації</p>
+                    </a>
+                    <div class="publication__bg  position-relative"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__wrapper d-flex">
+                    <div class="col footer__left">
+                        <div class="footer__top">
+                            <span>Одеса, Адміральський пр., 3</span>
+                            <a class="text-decoration-none text-uppercase position-relative fw-bold footer__map" href="https://www.google.com.ua/maps/place/%D0%90%D0%B4%D0%BC%D1%96%D1%80%D0%B0%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,+3,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+65000/@46.4360487,30.7379414,17z/data=!3m1!4b1!4m5!3m4!1s0x40c63396894457b7:0x7f6c5236cbcb70c8!8m2!3d46.436045!4d30.7401301">
+                                    Подивитися на мапі
+                            </a>
+                        </div>
+                        <div class="footer__bot">
+                            <a target="_blank" href="https://www.facebook.com/">
+                                <img src="./../images/icons/footerface.svg" alt="">
+                            </a>
+                            <a class="text-decoration-none text-uppercase position-relative fw-bold footer__contact footer__map" href="tel:+380503901591">
+                                +38 (050) 390 15 91
+                            </a>
+                            <a class="text-decoration-none text-uppercase position-relative fw-bold footer__email footer__map" href="email">
+                                contact@hlegals.net
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col footer__right d-flex justify-content-end">
+                        <p class="text-center">
+                            © 2021 ТОВ Юридична компанія «HLEGALS»
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="#" class="contact__modal-help">
+                    <h2 class="fw-bold">Ми хотіли б Вам допомогти</h2>
+                    <div class="mb-3 contact__modal-area">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="name" class="form-control border-0" id="exampleFormControlInput1" placeholder="Ім'я">
+                    </div>
+                    <div class="mb-3 contact__modal-area">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="3" placeholder="Повідомлення"></textarea>
+                    </div>
+                    <div class="mb-3 contact__modal-area">
+                        <label for="exampleFormControlInput2" class="form-label fw-bold">Як вам відповісти?</label>
+                        <input type="name" class="form-control border-0" id="exampleFormControlInput2" placeholder="Номер телефона">
+                    </div>
+                    <div class="mb-3 contact__modal-area">
+                        <label for="exampleFormControlInput3" class="form-label"></label>
+                        <input type="name" class="form-control border-0" id="exampleFormControlInput3" placeholder="Чи email">
+                    </div>
+                    <div class="contact__bottom d-flex justify-content-center">
+                        <div class="contact__bottom d-flex justify-content-center">
+                            <button class="contact__link-page d-flex justify-content-center align-items-center position-relative fw-bold border-0"><p class="m-0 text-white">Надіслати запит</p></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./../js/script.js"></script>
+</body>
+
+</html>

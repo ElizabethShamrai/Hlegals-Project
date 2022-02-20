@@ -1,0 +1,48 @@
+.clients {
+    padding: 30px 0 0;
+    h3 {
+        @include public ($box-shadow-bg, $font-size-sm);
+        letter-spacing: 1px;
+        padding: 0 0 30px;
+    }
+    .hillel {
+        @include clients-wrap($color-clients-hillel);
+    }
+    .look {
+        @include clients-wrap($color-clients-look);
+    }
+    .wannabiz {
+        @include clients-wrap($color-clients-wannabiz);
+    }
+    .tapgerine {
+        @include clients-wrap($color-clients-tapgerine);
+    }
+    .orangear {
+        @include clients-wrap($color-clients-orangear);
+    }
+    .adtelligent {
+        @include clients-wrap($color-clients-adtelligent);
+    }
+    .clickky {
+        @include clients-wrap($color-clients-clickky);
+    }
+    .leasing {
+        @include clients-wrap($color-clients-leasing);
+    }
+    .infratek {
+        @include clients-wrap($color-clients-infratek);
+    }
+    .citypark {
+        @include clients-wrap($color-clients-citypark);
+    }
+    .artprint {
+        @include clients-wrap($color-clients-artprint);
+    }
+    .ultimate {
+        @include clients-wrap ($color-black);
+    }
+    &__item a {
+        width: 100%;
+        height: 120px;
+    }
+}

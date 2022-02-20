@@ -1,0 +1,16 @@
+@include tablet {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        &__top,
+        &__bot {
+            flex-direction: column;
+        }
+        &__map:before {
+            display: none;
+        }
+    }
+}

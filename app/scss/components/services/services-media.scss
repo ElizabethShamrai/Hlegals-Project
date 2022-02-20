@@ -1,0 +1,41 @@
+@include tablet {
+    .services {
+        &__block {
+            width: 47%;
+        }
+    }
+}
+
+@include mobile {
+    .services {
+        &__block {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            h3 {
+                max-width: 80%;
+                padding: 20px 0 20px 10px;
+            }
+        }
+        h2 {
+            padding-bottom: 30px;
+        }
+        &__block {
+            img {
+                width: 64px;
+            }
+            width: 100%;
+        }
+        &__block-top {
+            padding: 60px 0 0;
+        }
+    }
+}
+
+@include mobile_s {
+    .services {
+        h3 {
+            max-width: 70%;
+        }
+    }
+}

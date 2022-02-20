@@ -1,0 +1,39 @@
+.team {
+    padding: 60px 0 0;
+    a {
+        @include public ($color-blue, $font-size-sm);
+    }
+    &__arrow {
+        color: $color-blue;
+    }
+    .carousel-indicators {
+        text-align: center;
+        gap: 14px;
+        margin: 0;
+        button {
+            @extend %carousel-button;
+        }
+    }
+    .carousel {
+        padding: 0 0 30px;
+    }
+    .carousel-item {
+        background: #F5F5FA;
+        border-radius: 12px;
+    }
+    h2 {
+        font-size: $font-size-xxl;
+        padding-bottom: 20px;
+        line-height: 50px;
+    }
+    p {
+        padding-bottom: 5px;
+        color: $color-gray;
+    }
+    &__info {
+        padding: 40px 40px 0 40px;
+    }
+    &__place {
+        display: flex;
+    }
+}

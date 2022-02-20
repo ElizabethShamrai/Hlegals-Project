@@ -1,0 +1,7 @@
+@include laptop {
+    .contact {
+        &__wrap {
+            padding: 0 20px;
+        }
+    }
+}

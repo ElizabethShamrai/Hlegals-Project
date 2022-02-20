@@ -1,0 +1,13 @@
+@include laptop {
+    .experience {
+        .nav,
+        .nav-link,
+        .tab-content {
+            display: none;
+        }
+        .carousel-inner,
+        .carousel-indicators {
+            display: inherit;
+        }
+    }
+}

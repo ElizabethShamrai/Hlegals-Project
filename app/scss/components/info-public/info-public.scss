@@ -1,0 +1,54 @@
+.info-public {
+    &__img {
+        padding: 60px 0 40px;
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+    &__border {
+        border-top: 4px solid #E6E6F0;
+        margin: 40px 0;
+    }
+    &__text {
+        padding: 0 20px;
+        span {
+            @include public ($color-gray, $font-size-xss);
+        }
+        a {
+            @include public ($box-shadow-bg, $font-size-xl)
+        }
+        P {
+            font-size: $font-size-sm-md;
+        }
+        h3 {
+            @include public ($color-footer, $font-size-md-xl);
+        }
+    }
+    ol {
+        color: $color-main;
+    }
+    ol span {
+        @include public ($color-black, $font-size-sm-md);
+        padding-left: 10px
+    }
+    &__blurd {
+        padding: 24px 0 15px;
+        img {
+            width: 55%;
+        }
+    }
+    .blurd {
+        font-size: $font-size-l;
+        padding-bottom: 40px;
+    }
+    &__link {
+        gap: 10px;
+        padding-bottom: 60px;
+        img {
+            background: $color-case;
+            border-radius: 12px;
+            padding: 9px;
+        }
+    }
+}

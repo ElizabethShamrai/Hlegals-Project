@@ -1,0 +1,15 @@
+@include mobile {
+    .banner {
+        min-height: 700px;
+        &__img-wrapper {
+            margin: 130px 0 0;
+        }
+        .img-p-letter {
+            width: 400px;
+            margin-top: 40px;
+        }
+        .img-p-bg {
+            display: none;
+        }
+    }
+}

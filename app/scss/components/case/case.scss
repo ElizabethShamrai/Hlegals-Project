@@ -1,0 +1,38 @@
+.case {
+    padding: 30px 0 0;
+    .row {
+        gap: 2px
+    }
+    &__second {
+        @include case ($color-case, 449px, 105px 20px 20px, none, none);
+    }
+    &__third {
+        @include case ($color-case, 433px, 105px 20px 20px, 0px 12px 0px 0px, none);
+    }
+    &__fourth {
+        @include case ($color-case, none, 45px 21px 20px, none, 2px 0 0);
+    }
+    &__fifth {
+        @include case ($color-case, 320px, 20px, 0px 0px 0px 12px, none);
+    }
+    &__sixth {
+        @include case ($color-case, 450px, 75px 20px 20px, none, none);
+    }
+    &__seventh {
+        @include case ($color-case, 545px, 75px 20px 20px, 0px 0px 12px 0px, none);
+    }
+    &__one {
+        @include case ($color-case, none, 20px 0 20px 20px, none, none);
+        @include public ($color-main, $font-size-sm);
+    }
+    &__item {
+        width: 433px;
+    }
+    p {
+        @include public ($color-violet, $font-size-md-xl);
+        margin-bottom: 20px;
+    }
+    &__indent {
+        margin: 40px 0;
+    }
+}

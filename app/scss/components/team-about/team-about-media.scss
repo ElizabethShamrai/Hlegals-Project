@@ -1,0 +1,35 @@
+@include laptop {
+    .team-about {
+        h3 {
+            font-size: $font-size-more-xxl;
+        }
+    }
+}
+
+@include tablet {
+    .team-about {
+        h2 {
+            font-size: $font-size-xl;
+        }
+        h3 {
+            font-size: $font-size-xxl;
+            padding: 130px 0;
+            letter-spacing: 40px;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__image {
+            height: 290px;
+        }
+    }
+}
+
+@include mobile {
+    .team-about {
+        h3 {
+            font-size: $font-size-md-xl;
+            letter-spacing: 20px;
+        }
+    }
+}

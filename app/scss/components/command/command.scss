@@ -1,0 +1,31 @@
+.command {
+    h2 {
+        padding: 80px 100px;
+        width: 865px;
+    }
+    &__item {
+        width: 413px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        padding: 20px 0;
+    }
+    &__text-top {
+        @include public ($box-shadow-bg, $font-size-sm-md);
+    }
+    &__text-bot {
+        @include public ($color-gray, $font-size-l);
+    }
+    &__link {
+        background: $color-case;
+        width: 32px;
+        height: 32px;
+        border-radius: 20px;
+        a:active {
+            transform: rotate(-90deg);
+        }
+    }
+    &__workers {
+        margin-bottom: 20px;
+    }
+}

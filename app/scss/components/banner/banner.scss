@@ -1,0 +1,52 @@
+.banner {
+    height: 100vh;
+    min-height: 900px;
+    background: $color-bg-top;
+    box-shadow: 2px 2px 2px 2px $box-shadow-bg;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        z-index: 4;
+        -webkit-box-shadow: 0 0 50px 80px $box-shadow-bg;
+        box-shadow: 0 -55px 45px 105px $box-shadow-bg;
+    }
+    &__img-wrapper {
+        @include flex(center);
+        margin: 230px 0 0;
+        height: 644px;
+    }
+    &__text {
+        padding-top: 175px;
+        h1 {
+            @include public ($color-white, $font-size-xl-xxl);
+            line-height: 45px;
+            width: 80%;
+        }
+    }
+    .img-p-bg {
+        height: 645px;
+        width: 690px;
+        background: url(./../images/icons/bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .img-p-letter {
+        margin-top: 50px;
+        height: 690px;
+        width: 450px;
+        background: url(./../images/icons/p-letter.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__scroll-down {
+        top: 64%;
+        z-index: 5;
+    }
+    &__scroll-jump {
+        transition: transform 0.5s;
+        transform: translateY(-50px);
+    }
+}

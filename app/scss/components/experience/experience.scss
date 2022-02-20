@@ -1,0 +1,78 @@
+    .experience {
+        padding: 80px 0 80px;
+        @extend %color-bg-center;
+        &__tag {
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 80px;
+        }
+        .nav-link {
+            @include public ($linear-gradient-main, $font-size-xxl);
+            -webkit-background-clip: text;
+            text-decoration: none;
+            text-align: right;
+            font-weight: bold;
+            line-height: 50px;
+            border-right: 4px solid $color-main;
+            &:hover {
+                @extend %color-main-gradient;
+            }
+        }
+        .nav {
+            width: 45%;
+        }
+        .tab-content {
+            width: 49%;
+        }
+        .tab-pane {
+            padding: 70px 0 0 40px;
+        }
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            border-color: $color-main;
+            @extend %color-main-gradient;
+        }
+        .nav-link {
+            @include public ($color-gray, $font-size-xxl);
+            padding: 10px 40px 10px 0;
+            line-height: 50px;
+            letter-spacing: 0;
+            transition: 0.3s;
+            border-radius: 0;
+            border-right: 4px solid $color-light-gray;
+        }
+        h3 {
+            @include public ($color-white, $font-size-xl);
+            padding: 10px 0 20px;
+            margin: 0;
+        }
+        p {
+            @include public ($color-white, $font-size-md);
+            line-height: 30px;
+        }
+        .color-gradient {
+            @extend %color-main-gradient;
+            font-size: $font-size-sm;
+            padding-bottom: 10px;
+        }
+        .carousel-item {
+            h2 {
+                font-size: $font-size-md;
+            }
+            p {
+                font-size: $font-size-sm-md;
+                padding-bottom: 40px;
+                margin: 0 auto;
+            }
+        }
+        .carousel-indicators {
+            text-align: center;
+            button {
+                @extend %carousel-button;
+            }
+        }
+        .carousel-inner,
+        .carousel-indicators {
+            display: none;
+        }
+    }

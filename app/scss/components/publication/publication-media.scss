@@ -1,0 +1,60 @@
+    @include desktop {
+        .publication {
+            &__items {
+                width: 400px;
+            }
+            &__items-page {
+                width: 650px;
+            }
+        }
+    }
+    
+    @include mobile {
+        .publication {
+            &__items {
+                width: 300px;
+            }
+            &__items-page {
+                width: 420px;
+            }
+            &__wrapper {
+                height: 600px;
+            }
+        }
+    }
+    
+    @include mobile_s {
+        .publication {
+            &__items-page {
+                width: 250px;
+            }
+        }
+    }
+    
+    @include tablet {
+        .publication {
+            h2 {
+                font-size: $font-size-xl;
+            }
+            &__text {
+                p {
+                    display: none;
+                }
+            }
+            &__border {
+                display: none;
+            }
+            &__top {
+                margin-bottom: 20px;
+            }
+            &__wrapper {
+                gap: 20px;
+            }
+            &__bg {
+                display: none;
+            }
+            &__adeptive-none {
+                display: none;
+            }
+        }
+    }

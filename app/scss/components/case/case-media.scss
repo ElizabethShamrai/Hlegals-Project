@@ -1,0 +1,22 @@
+    @include desktop {
+        .case {
+            .row {
+                justify-content: space-around;
+            }
+            .w-case {
+                width: 49%;
+            }
+            &__third {
+                border-radius: 0;
+            }
+        }
+    }
+    
+    @include mobile {
+        .case {
+            .row {
+                flex-direction: column;
+            }
+            @include case-width-adaptive;
+        }
+    }

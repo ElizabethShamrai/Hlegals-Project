@@ -1,0 +1,35 @@
+.introduction {
+    padding: 100px 0;
+    h2 {
+        font-size: $font-size-xxl;
+    }
+    h3 {
+        @extend %color-gradient;
+        font-size: $font-size-large;
+        margin: 0;
+    }
+    &__content-right {
+        gap: 40px;
+        border-left: 4px solid #E6E6F0;
+        padding: 0 0 0 20px;
+        &:hover {
+            transition: .3s;
+            border-color: $color-main;
+        }
+        p {
+            @include public ($box-shadow-bg, $font-size-sm-md);
+        }
+    }
+    &__content-left {
+        gap: 20px;
+        P {
+            font-size: $font-size-medium;
+        }
+    }
+    &__content {
+        gap: 70px;
+    }
+    &__item-top {
+        gap: 5px;
+    }
+}

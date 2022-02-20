@@ -1,0 +1,55 @@
+.footer {
+    background: $color-case;
+    padding: 35px 0 50px;
+    &__map:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: $color-gray;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 2.5px);
+        left: -10px;
+    }
+    &__left {
+        gap: 50px;
+        span {
+            @include public ($box-shadow-bg, $font-size-l);
+        }
+    }
+    &__right {
+        p {
+            color: $color-gray;
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        a {
+            @include public ($color-blue, $font-size-xss);
+            letter-spacing: 1px;
+        }
+    }
+    &__bot {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    &__contact {
+        @include public ($color-footer, $font-size-l);
+    }
+    &__email {
+        @include public ($color-blue, $font-size-xss);
+    }
+    &__about-hover:hover {
+        color: $color-main;
+        transition: 0.3s;
+    }
+    a svg:hover #footer-facebook {
+        fill: $color-main;
+        transition: 0.3s;
+    }
+}

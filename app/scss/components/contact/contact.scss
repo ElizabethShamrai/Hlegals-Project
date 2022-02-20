@@ -1,0 +1,46 @@
+.contact {
+    padding: 80px 0 80px;
+    &__address {
+        p {
+            @include public ($box-shadow-bg, $font-size-medium);
+            width: 45%;
+        }
+    }
+    &__wrap {
+        padding: 0 100px;
+        gap: 150px;
+    }
+    &__info {
+        padding: 90px 0 0;
+    }
+    &__connect {
+        a {
+            font-size: $font-size-medium;
+        }
+    }
+    .text-violet {
+        @include public ($color-footer, $font-size-medium);
+        padding-bottom: 20px
+    }
+    &__socials {
+        a {
+            @include public ($color-blue, $font-size-xss);
+            letter-spacing: 1px;
+            gap: 10px;
+            width: 45%;
+        }
+    }
+    &__modal-help {
+        background: #F5F5FA;
+        border-radius: 12px;
+        padding: 20px;
+    }
+    &__border {
+        border-top: 4px solid #E6E6F0;
+        margin: 40px 0 20px;
+    }
+    &__link-page {
+        @extend %link-page;
+        margin: 20px 0;
+    }
+}

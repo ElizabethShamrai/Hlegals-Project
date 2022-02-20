@@ -1,0 +1,10 @@
+@include mobile {
+    .team-unit {
+        &__left {
+            padding: 0;
+            img {
+                width: 320px;
+            }
+        }
+    }
+}

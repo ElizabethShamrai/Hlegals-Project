@@ -1,0 +1,91 @@
+@mixin desktop() {
+    @media(max-width: $breakpoint_xxl) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media(max-width: $breakpoint_xl) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media(max-width: $breakpoint_lg) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media(max-width: $breakpoint_md) {
+        @content;
+    }
+}
+
+@mixin mobile_s() {
+    @media(max-width: $breakpoint_sm) {
+        @content;
+    }
+}
+
+@mixin flex ($flex-value) {
+    @extend %dis-flex;
+    justify-content: $flex-value;
+}
+
+@mixin flex-wrap ($flex-value) {
+    @extend %dis-f-wrap;
+    justify-content: $flex-value;
+}
+
+@mixin services {
+    position: relative;
+    &:before {
+        content: '';
+        background: $card-bg-top;
+        width: 97%;
+        bottom: -10px;
+        @extend %card-shadow-bg;
+    }
+    &:after {
+        content: '';
+        background: $card-bg-bot;
+        width: 94%;
+        bottom: -20px;
+        @extend %card-shadow-bg;
+    }
+}
+
+@mixin case-width-adaptive {
+    .case__item,
+    .case__second,
+    .case__third,
+    .case__fifth,
+    .case__sixth,
+    .case__seventh {
+        width: 100%;
+    }
+}
+
+@mixin clients-wrap ($background-value) {
+    @extend %clients-w-h;
+    background-color: $background-value;
+}
+
+@mixin bg-navbar ($background-value) {
+    background-color: $background-value;
+    border-radius: 10px;
+}
+
+@mixin public ($color-value, $font-size-value) {
+    font-size: $font-size-value;
+    color: $color-value;
+}
+
+@mixin case ($color-value, $width-value, $padding-value, $border-radius, $margin-value) {
+    background: $color-value;
+    width: $width-value;
+    padding: $padding-value;
+    border-radius: $border-radius;
+    margin: $margin-value;
+}

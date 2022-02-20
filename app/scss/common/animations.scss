@@ -1,0 +1,27 @@
+// If you want to add/create some @keyframes animations to your project
+// write them in this file
+// https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+@keyframes slide_product {
+    from {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.page__detail {
+    animation-name: slide_product;
+    animation-iteration-count: infinite;
+}
+
+.products .banner__scroll-jump:nth-child(odd) .page__detail {
+    animation-duration: 7s;
+}
+
+.products .banner__scroll-jump:nth-child(even) .page__detail {
+    animation-duration: 6s;
+}

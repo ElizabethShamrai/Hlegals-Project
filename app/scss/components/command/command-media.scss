@@ -1,0 +1,37 @@
+    @include tablet {
+        .command {
+            &__item {
+                width: 350px;
+            }
+            &__item-img {
+                img {
+                    width: 350px;
+                }
+            }
+        }
+    }
+    
+    @include mobile {
+        .command {
+            &__item {
+                display: flex;
+            }
+            &__item-img {
+                img {
+                    width: 158px;
+                }
+            }
+            &__workers {
+                flex-direction: column;
+            }
+            h2 {
+                padding: 80px 25px;
+            }
+            &__text {
+                padding-left: 20px;
+            }
+            &__name {
+                padding-bottom: 10px;
+            }
+        }
+    }

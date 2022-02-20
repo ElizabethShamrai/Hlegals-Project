@@ -1,0 +1,119 @@
+body {
+    font-family: $font-main;
+}
+
+.container {
+    max-width: $breakpoint_xxl;
+}
+
+@include desktop {
+    .container,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_xl;
+    }
+}
+
+@include laptop {
+    .container,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_lg;
+    }
+}
+
+@include tablet {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_md;
+    }
+}
+
+@include mobile {
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: $breakpoint_sm;
+    }
+}
+
+@include mobile_s {
+    .container,
+    .container-sm {
+        max-width: $breakpoint_xs;
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+}
+
+.text-blue {
+    color: $color-blue;
+}
+
+h2 {
+    @extend %color-gradient;
+}
+
+.bg-services {
+    @extend %color-bg-center;
+}
+
+.current-page {
+    color: $color-main;
+    border-bottom: 2px solid $color-main;
+}
+
+.current-page-white {
+    border-bottom: 2px solid $color-white;
+}
+
+.bg-service-unit {
+    background: url(./../images/service-unit.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 500px;
+}
+
+.bg-service-intro {
+    margin: 0;
+    background: linear-gradient(208deg, #323264 11.93%, #323264 65.17%, #643e72 111.46%);
+}
+
+.shadow-bot {
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 0%, #323264 100%);
+    margin: 143px 0;
+    height: 201px
+}
+
+.modal {
+    background: $box-shadow-bg;
+}
+
+.form-label {
+    color: $color-gray;
+    padding-left: 10px;
+}
+
+.form-control {
+    border-radius: 8px;
+    font-size: $font-size-sm-md;
+    &::placeholder {
+        color: $color-gray;
+    }
+}
+
+.modal-content {
+    transform: translateY(180px);
+}

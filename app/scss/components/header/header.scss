@@ -1,0 +1,99 @@
+.header {
+    padding-top: 55px;
+    width: 100%;
+    top: 0;
+    #menu_toggle {
+        display: none;
+    }
+    &__top {
+        left: 0;
+        right: 0;
+    }
+    &__lang-switcher {
+        label {
+            color: $color-white;
+            cursor: pointer;
+            input {
+                display: none;
+            }
+            input:checked+span {
+                background: $color-main;
+                border-radius: 8px;
+                color: $color-white;
+            }
+            span {
+                font-size: 12px;
+                padding: 5px 6px;
+                border-radius: 8px;
+            }
+        }
+    }
+    &__top-wrapper {
+        z-index: 1;
+        &>div:not(:last-child)::after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: $color-white;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 2.5px);
+            right: 7.5px;
+        }
+        &>div:not(:last-child) {
+            position: relative;
+            padding-right: 20px;
+        }
+    }
+    .navbar-nav {
+        padding: 25px 0;
+        gap: 15px;
+    }
+    &__icon-hamburger {
+        background: url(./../images/icons/hamburger.svg);
+    }
+    .navbar-toggler {
+        box-shadow: none;
+        border: none;
+        outline: none;
+        padding: 30px 0 0;
+    }
+    &__link {
+        font-size: $font-size-sm-md;
+        transition: 0.3s;
+        &:hover,
+        &:active {
+            color: $color-main;
+        }
+    }
+    &__top-color {
+        label {
+            color: $color-gray;
+        }
+        input:checked+span {
+            color: $color-gray;
+        }
+        &>div:not(:last-child)::after {
+            content: '';
+            background-color: $color-gray;
+        }
+        a {
+            color: $color-gray;
+        }
+    }
+    &__hover-effect:hover {
+        background: $hover-header-color;
+    }
+    a svg:hover #facebook {
+        fill: $color-blue;
+        transition: 0.3s;
+    }
+    h3 {
+        @include public ($box-shadow-bg, $font-size-xl-xxl);
+        line-height: 45px;
+    }
+    &__about-none {
+        display: none;
+    }
+}
