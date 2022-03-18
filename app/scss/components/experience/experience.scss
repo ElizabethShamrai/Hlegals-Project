@@ -1,10 +1,10 @@
     .experience {
-        padding: 80px 0 80px;
+        height: 425px;
         @extend %color-bg-center;
+        padding-top: 75px;
         &__tag {
             display: flex;
             align-items: flex-start;
-            padding-bottom: 80px;
         }
         .nav-link {
             @include public ($linear-gradient-main, $font-size-xxl);

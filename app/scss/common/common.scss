@@ -114,6 +114,7 @@ h2 {
     }
 }
 
-.modal-content {
-    transform: translateY(180px);
+.contact__link-page {
+    @extend %link-page;
+    margin: 20px 0;
 }

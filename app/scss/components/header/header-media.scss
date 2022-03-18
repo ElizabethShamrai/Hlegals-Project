@@ -1,3 +1,18 @@
+@include desktop {
+    .header {
+        .navbar-brand {
+            img {
+                width: 107px;
+            }
+        }
+        &__logo {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
 @media(max-width: 990px) {
     .header {
         &__bg-item {
@@ -108,9 +123,6 @@
         }
         .navbar-toggler {
             padding: 0;
-        }
-        .navbar-brand img {
-            height: 30px;
         }
         h3 {
             font-size: $font-size-md-xl;
