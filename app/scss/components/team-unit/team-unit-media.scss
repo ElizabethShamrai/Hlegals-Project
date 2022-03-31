@@ -1,3 +1,13 @@
+@media(max-width: 1400px) {
+    .team-unit {
+        &__text {
+            &>:not(:last-child):after {
+                display: none;
+            }
+        }
+    }
+}
+
 @include mobile {
     .team-unit {
         &__left {

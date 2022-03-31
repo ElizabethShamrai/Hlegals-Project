@@ -1,7 +1,18 @@
 .service-intro {
     margin: -295px 0 0;
+    &__pad {
+        gap: 60px;
+        width: 85%;
+    }
+    &__border-top {
+        border-top: 4px inset;
+        width: 80%;
+    }
     h2 {
         font-size: $font-size-xxl;
+    }
+    h3 {
+        padding-left: 170px
     }
     p {
         @include public ($color-white, $font-size-medium);
@@ -34,7 +45,7 @@
         margin: 24px 0 0;
     }
     &__info-top {
-        padding: 0 224px
+        width: 57%;
     }
     &__info-bot {
         margin: 155px 0;

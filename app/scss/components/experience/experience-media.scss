@@ -1,5 +1,8 @@
 @include laptop {
     .experience {
+        padding-top: 0;
+        margin-top: -50px;
+        height: 100%;
         .nav,
         .nav-link,
         .tab-content {

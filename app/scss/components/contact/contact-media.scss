@@ -1,7 +1,35 @@
-@include laptop {
+@media(max-width: 1400px) {
     .contact {
+        &__info {
+            padding: 0;
+        }
         &__wrap {
             padding: 0 20px;
+            gap: 40px;
+        }
+    }
+}
+
+@include desktop {
+    .contact {}
+}
+
+@include laptop {
+    .contact {
+        padding: 20px 0 40px;
+        &__socials a {
+            width: 75%;
+        }
+    }
+}
+
+@include mobile {
+    .contact {
+        &__address {
+            p {
+                @include public ($box-shadow-bg, $font-size-medium);
+                width: 70%;
+            }
         }
     }
 }

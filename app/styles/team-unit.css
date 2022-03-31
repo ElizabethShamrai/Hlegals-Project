@@ -7520,7 +7520,7 @@ body {
 @media (max-width: 425px) {
   .container,
 .container-sm {
-    max-width: 375px;
+    max-width: 335px;
   }
 }
 a {
@@ -7542,14 +7542,6 @@ a {
   border-bottom: 2px solid #FFFF;
 }
 
-.bg-service-unit {
-  background: url(./../images/service-unit.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  height: 500px;
-}
-
 .bg-service-intro {
   margin: 0;
   background: -o-linear-gradient(242deg, #323264 11.93%, #323264 65.17%, #643e72 111.46%);
@@ -7560,10 +7552,15 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 100, 0)), to(#323264));
   background: -o-linear-gradient(top, rgba(50, 50, 100, 0) 0%, #323264 100%);
   background: linear-gradient(180deg, rgba(50, 50, 100, 0) 0%, #323264 100%);
-  margin: 143px 0;
-  height: 201px;
+  margin: 165px 0;
+  height: 200px;
 }
 
+@media (max-width: 860px) {
+  .header .shadow-bot {
+    margin: 185px 0;
+  }
+}
 .modal {
   background: #323264;
 }
@@ -10160,7 +10157,7 @@ textarea.form-control-lg {
   }
 }
 .header {
-  padding-top: 55px;
+  padding-top: 50px;
   width: 100%;
   top: 0;
 }
@@ -10222,6 +10219,7 @@ textarea.form-control-lg {
 }
 .header .navbar-brand {
   margin-top: -20px;
+  padding-top: 20px;
 }
 .header__logo {
   margin-top: -20px;
@@ -10264,6 +10262,14 @@ textarea.form-control-lg {
 }
 .header__about-none {
   display: none;
+}
+.header__service-unit {
+  background: url(./../images/service-unit.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vh;
+  min-height: 500px;
 }
 
 @media (max-width: 1320px) {
@@ -10359,8 +10365,14 @@ textarea.form-control-lg {
   .header__none {
     display: none;
   }
+  .header__service-unit {
+    background-size: cover;
+  }
 }
 @media (max-width: 767px) {
+  .header {
+    padding-top: 25px;
+  }
   .header__lang-switcher label {
     color: #B3B3BA;
   }
@@ -10443,6 +10455,7 @@ textarea.form-control-lg {
 }
 .team-unit__text p {
   color: #B3B3BA;
+  font-size: 16px;
 }
 .team-unit__text a {
   color: #24A3FF;
@@ -10455,6 +10468,11 @@ textarea.form-control-lg {
   padding-top: 40px;
 }
 
+@media (max-width: 1400px) {
+  .team-unit__text > :not(:last-child):after {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .team-unit__left {
     padding: 0;

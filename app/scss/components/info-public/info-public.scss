@@ -2,7 +2,7 @@
     &__img {
         padding: 60px 0 40px;
         img {
-            width: 100%;
+            width: 900px;
             border-radius: 12px;
         }
     }
@@ -44,7 +44,6 @@
     }
     &__link {
         gap: 10px;
-        padding-bottom: 60px;
         img {
             background: $color-case;
             border-radius: 12px;

@@ -18,5 +18,13 @@
                 flex-direction: column;
             }
             @include case-width-adaptive;
+            .case__second,
+            .case__third,
+            .case__fourth,
+            .case__fifth,
+            .case__sixth,
+            .case__seventh {
+                padding-top: 20px;
+            }
         }
     }

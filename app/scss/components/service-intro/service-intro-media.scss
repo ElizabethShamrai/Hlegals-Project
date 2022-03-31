@@ -1,0 +1,21 @@
+@include desktop {
+    .service-intro {
+        &__pad {
+            width: 100%;
+        }
+        h3 {
+            padding-left: 35px;
+        }
+        &__border-top {
+            width: 90%;
+        }
+    }
+}
+
+@include laptop {
+    .service-intro {
+        &__info-top {
+            width: 100%;
+        }
+    }
+}

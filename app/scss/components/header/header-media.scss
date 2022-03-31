@@ -90,11 +90,15 @@
         &__none {
             display: none;
         }
+        &__service-unit {
+            background-size: cover;
+        }
     }
 }
 
 @include mobile {
     .header {
+        padding-top: 25px;
         &__lang-switcher {
             label {
                 color: $color-gray;

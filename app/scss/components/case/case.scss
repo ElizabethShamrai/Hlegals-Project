@@ -16,10 +16,10 @@
         @include case ($color-case, 320px, 20px, 0px 0px 0px 12px, none);
     }
     &__sixth {
-        @include case ($color-case, 450px, 75px 20px 20px, none, none);
+        @include case ($color-case, 450px, 90px 20px 20px, none, none);
     }
     &__seventh {
-        @include case ($color-case, 545px, 75px 20px 20px, 0px 0px 12px 0px, none);
+        @include case ($color-case, 545px, 90px 20px 20px, 0px 0px 12px 0px, none);
     }
     &__one {
         @include case ($color-case, none, 20px 0 20px 20px, none, none);
@@ -34,5 +34,13 @@
     }
     &__indent {
         margin: 40px 0;
+    }
+    .case__second,
+    .case__third,
+    .case__fourth,
+    .case__fifth,
+    .case__sixth,
+    .case__seventh {
+        @include public ($color-gray, $font-size-sm-md);
     }
 }

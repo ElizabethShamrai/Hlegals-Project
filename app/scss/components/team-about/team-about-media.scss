@@ -8,6 +8,7 @@
 
 @include tablet {
     .team-about {
+        padding-bottom: 40px;
         h2 {
             font-size: $font-size-xl;
         }
@@ -18,9 +19,11 @@
         }
         &__content {
             flex-direction: column;
+            gap: 20px;
         }
         &__image {
-            height: 290px;
+            // height: 290px;
+            margin-bottom: 20px;
         }
     }
 }

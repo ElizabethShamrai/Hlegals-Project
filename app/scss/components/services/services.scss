@@ -1,44 +1,40 @@
-    .services {
-        @include services;
+.services {
+    @include services;
+    @extend %color-bg-center;
+    border-radius: 0px 0px 12px 12px;
+    padding: 75px 0;
+    &__bg {
         @extend %color-bg-center;
-        border-radius: 0px 0px 12px 12px;
-        padding: 80px 0;
-        &__bg {
-            @extend %color-bg-center;
-        }
-        &__title a {
-            @include public ($color-white, $font-size-sm);
-            opacity: 0.5;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-        h2 {
-            padding-bottom: 70px;
-        }
-        h3 {
-            @include public ($color-blue, $font-size-md-xl);
-            line-height: 28px;
-            padding: 20px 0;
-        }
-        p {
-            @include public ($color-white, $font-size-sm-md);
-            margin: 0;
-        }
-        .pad-bottom {
-            padding-bottom: 20px;
-        }
-        &__blocks {
-            gap: 40px;
-        }
-        &__block {
-            width: 30%;
-            a {
-                width: 100%;
-            }
-        }
-        &__top-bot {
-            padding: 80px 0;
-            margin-bottom: 40px;
+    }
+    &__title {
+        padding-bottom: 70px;
+    }
+    h2 {
+        font-size: $font-size-xxl;
+    }
+    h3 {
+        @include public ($color-blue, $font-size-md-xl);
+        line-height: 28px;
+        padding: 20px 0;
+    }
+    p {
+        @include public ($color-white, $font-size-sm-md);
+        margin: 0;
+    }
+    .pad-bottom {
+        padding-bottom: 20px;
+    }
+    &__blocks {
+        gap: 40px;
+    }
+    &__block {
+        width: 30%;
+        a {
+            width: 100%;
         }
     }
+    &__top-bot {
+        padding: 80px 0;
+        margin-bottom: 40px;
+    }
+}

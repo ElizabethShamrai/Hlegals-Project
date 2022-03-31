@@ -1,0 +1,17 @@
+@include desktop {
+    .info-public {
+        &__img img {
+            border-radius: 12px 0 0;
+        }
+    }
+}
+
+@include mobile {
+    .info-public {
+        &__text {
+            a {
+                font-size: $font-size-md;
+            }
+        }
+    }
+}
